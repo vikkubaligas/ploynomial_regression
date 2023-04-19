@@ -119,7 +119,7 @@ Where $j$ indicates the $j^{th}$ input among N inputs.
 
 Now we can re write (3) and (4)
 
-$E_{j} = Y_{j} - y_{j}\ $ … (6)
+$$E_{j} = Y_{j} - y_{j}\ $$ … (6)
 
 It must be noted that $i$ is exclusively used to subscript the weights.
 For 3<sup>rd</sup> degree polynomial, $i\ $will range from 0 to 3 as
@@ -201,8 +201,9 @@ inputs/outputs/predictions of the regression model. $i$ and $j$ must NOT
 be confused NOR be used interchangeably.
 
 Finally using equation (11) in our main weight updating equation (2) we
-arrive at*  
-*$$w_{i} = \ w_{i} - \left( \ \frac{- 2l\ }{N}\ \sum_{j = 1}^{N}{\left( {x_{j}^{i}E}_{j} \right)\ }\  \right)\ldots(12)$$
+arrive at
+
+$$w_{i} = \ w_{i} - \left( \ \frac{- 2l\ }{N}\ \sum_{j = 1}^{N}{\left( {x_{j}^{i}E}_{j} \right)\ }\  \right)\ldots(12)$$
 
 This becomes our main equation does all the magic inside out regression
 model, which is used in the code.
