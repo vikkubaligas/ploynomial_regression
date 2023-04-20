@@ -10,7 +10,7 @@ as the coefficients of the polynomial equation:
 $$Y\  = \ {x^{0}w}_{0}\  + \ x^{1}w_{1}\  + x^{2}w_{2}\  + \ x^{3}w_{3}\ldots(1)$$
 
 The model tries to arrive at the correct weights, which produce the same
-result as the actual results. It must be noted here that $w_{0}\ $ is
+result as the actual results. It must be noted here that $w_{0}\$ is
 the bias parameter in our typical polynomial equation. Instead of using
 a bias parameter separately, we have used it as ${x^{0}w}_{0}$ , where
 $x^{0}$ is 1. This is the same as all other notations.
@@ -122,7 +122,7 @@ Now we can re write (3) and (4)
 $$E_{j} = Y_{j} - y_{j}\ $$ … (6)
 
 It must be noted that $i$ is exclusively used to subscript the weights.
-For 3<sup>rd</sup> degree polynomial, $i\ $will range from 0 to 3 as
+For 3<sup>rd</sup> degree polynomial, $i$will range from 0 to 3 as
 shown in (1) and (5). $i$ and $j$ must NOT be confused NOR be used
 interchangeably.
 
@@ -151,11 +151,13 @@ This cost function must be differentiated (degree+1) number of times to
 get (degree+1) number of gradients that will be used to update
 (degree+1) number weights. If the degree of the polynomial is 3, as
 shown in (8), then 4 gradients will be calculated and 4 weights will be
-updated for one set of N inputs. This process, of updating 4 weights,
+updated for one set of N inputs. Note that there are (degree) number of 
+coefficients or weights and one bias parameter, which makes up the total
+to be (degree+1). This process, of updating 4 weights,
 will be repeated thousands of times for all 4 of them to arrive at the
 optimal combination which produces minimum cost.
 
-For $w_{0}$, $\ $all other variables except $w_{0}\ $are treated as
+For $w_{0}$, all other variables except $w_{0}$are treated as
 constants. So, derivative of (8) with respect to $w_{0}$ will simply be:
 
 $$\frac{\partial C}{\partial\ w_{0}} = \ \frac{\partial\ }{\partial\ w_{0}}\ \left( \frac{1}{N}\ \sum_{j = 1}^{N}{(\ Y_{j} - ({x_{j}^{0}w}_{0}\  + \ K1\ )}^{2} \right)$$
